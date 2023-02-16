@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image, ImageEnhance
 import os
 
-img = Image.open(r'G:\.shortcut-targets-by-id\1XOMUuLHiM5Iwz7XVbtov9F6fcQxzI93L\JS Research Students\Ethan Catalanello\Cases\20029\20029F1\20029F1_Images\20029F1B_LLL-UV\20029F1B_00091.tif')
+img = Image.open('removed')
 im = img.load()
 width, height = img.size
 pxIntensityR = []
