@@ -26,9 +26,9 @@ def read_hobj(image_filename):
     return np.array(image_array).reshape(rows, cols)
 
 
-imgFolder = os.path.join(r'G:\.shortcut-targets-by-id\1XOMUuLHiM5Iwz7XVbtov9F6fcQxzI93L\JS Research Students\Zack Dragos\20029\20029F1\20029F1Extract')
-saveDir = os.path.join(r'G:\.shortcut-targets-by-id\1XOMUuLHiM5Iwz7XVbtov9F6fcQxzI93L\JS Research Students\Zack Dragos\20029\20029F1\20029F1Unscl')
-sclSaveDir = os.path.join(r'G:\.shortcut-targets-by-id\1XOMUuLHiM5Iwz7XVbtov9F6fcQxzI93L\JS Research Students\Zack Dragos\20029\20029F1\20029F1Scl')
+imgFolder = os.path.join('removed')
+saveDir = os.path.join('removed')
+sclSaveDir = os.path.join('removed')
 
 for fileName in os.listdir(imgFolder):
     imgPath = os.path.join(imgFolder, fileName)
