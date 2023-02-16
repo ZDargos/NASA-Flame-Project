@@ -2,9 +2,9 @@ import cv2
 import os
 from PIL import Image, ImageEnhance
 
-for fileName in os.listdir(r'G:\.shortcut-targets-by-id\1pJlXGXFXW0mhG6UF8qOK_dHbw1yUybKO\Zack Dragos\20029\20029F1\FlameOnly'):
+for fileName in os.listdir('removed'):
     print(fileName)
-    img = cv2.imread(r'G:\.shortcut-targets-by-id\1pJlXGXFXW0mhG6UF8qOK_dHbw1yUybKO\Zack Dragos\20029\20029F1\FlameOnly' + "\\" + fileName)
+    img = cv2.imread('removed' + "\\" + fileName)
 
     (B, G, R) = cv2.split(img)
     #img2 = B - R
@@ -22,4 +22,4 @@ for fileName in os.listdir(r'G:\.shortcut-targets-by-id\1pJlXGXFXW0mhG6UF8qOK_dH
         for j in range(img2.size[1]):
             if im[i,j] > 3:
                 print("Hi")
-    cv2.imwrite(os.path.join(r'G:\.shortcut-targets-by-id\1pJlXGXFXW0mhG6UF8qOK_dHbw1yUybKO\Zack Dragos\20029\20029F1\SubtractedImages', fileName), img2)
+    cv2.imwrite(os.path.join('removed', fileName), img2)
