@@ -2,9 +2,9 @@ from PIL import Image
 import os
 import math
 import glob
-pic = r'G:\.shortcut-targets-by-id\12r7NVnUc9cMtuw-IqvGIc2uNipmfyODe\Cases\19256\19256C1\19256C1_Images\BrokenImages\20190913_203536.704_INTNS_19256C1_00312.tiff'
-MainDir = r'G:\.shortcut-targets-by-id\12r7NVnUc9cMtuw-IqvGIc2uNipmfyODe\Cases'
-secDir = r'G:\.shortcut-targets-by-id\12r7NVnUc9cMtuw-IqvGIc2uNipmfyODe\Cases\19256\19256D1\19256D1_Images\19256D1_INTNS_ALL'
+pic = 'removed''
+MainDir = 'removed'
+secDir = 'removed'
 def PercentCheck(count, total):
     if count == math.floor(total/20):
         print('completed 5%   ', count, '/', total)
@@ -62,9 +62,6 @@ def findErrors(mainDir):
 #     print(folder)
 #     findErrors(MainDir + "\\" + folder)
 
-s = 'lselsLLLfudsvUVusdv'
-if 'LLLUV' in s:
-    print('hi')
 
 #all.append(errorCheck(secDir))
 #print(all[0][1])
